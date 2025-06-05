@@ -6,6 +6,12 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --teal-dark: #356C75;
+  --teal-light: #ADC3BC;
+  --charcoal: #3F4B51;
+  --forest: #3E6E5C;
+  --mint: #C9D8AC;
+  --background: #FDFBF7;
 }
 
 @media (prefers-color-scheme: dark) {
