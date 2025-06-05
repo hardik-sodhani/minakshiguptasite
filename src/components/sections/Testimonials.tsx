@@ -16,10 +16,10 @@ export default function Testimonials() {
   }, [current]);
 
   return (
-    <section className="bg-white py-16 px-6 text-center">
-      <h2 className="text-2xl font-bold text-brand-forest mb-10">Client Testimonials</h2>
+    <section className="bg-brand-charcoal py-16 px-6 text-center">
+      <h2 className="text-2xl font-bold text-brand-mint mb-10">Client Testimonials</h2>
       <div className="relative max-w-3xl mx-auto">
-        <div className="bg-gray-50 p-8 rounded-xl shadow-md min-h-[200px] relative flex items-center">
+        <div className="bg-brand-beige p-8 rounded-xl shadow-md min-h-[200px] relative flex items-center">
           {/* Left Arrow */}
           <button
             onClick={() => setCurrent((current - 1 + testimonials.length) % testimonials.length)}
@@ -32,10 +32,10 @@ export default function Testimonials() {
           {/* Testimonial Content */}
           <div className="flex-1 px-8">
             <blockquote className="italic text-brand-charcoal text-lg">
-              "{testimonials[current].quote}"
+              &quot;{testimonials[current].quote}&quot;
             </blockquote>
             <p className="mt-4 font-bold text-brand-forest">{testimonials[current].author}</p>
-            <p className="text-sm text-gray-500">{testimonials[current].role}</p>
+            <p className="text-sm text-brand-charcoal">{testimonials[current].role}</p>
           </div>
           {/* Right Arrow */}
           <button
