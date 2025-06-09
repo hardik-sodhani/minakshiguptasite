@@ -41,6 +41,6 @@ export const services: Service[] = [
 
 export const navigation: NavItem[] = [
   { label: "About", href: "/about" },
-  { label: "Case Studies", href: "/testimonials" },
-  { label: "Contact", href: "/contact" }
+  { label: "Case Studies", href: "/case-studies" },
+  // { label: "Contact", href: "/contact" }
 ]; 
