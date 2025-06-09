@@ -5,19 +5,14 @@ import { ServiceIcon } from '../components/ui/ServiceIcon';
 
 export const testimonials: Testimonial[] = [
   {
-    quote: "Working with Minakshi was transformative for our temple wedding. Her deep understanding of cultural nuances and ability to seamlessly blend tradition with contemporary elegance made our celebration truly extraordinary.",
+    quote: "I've known Minakshi since our college days, and it gives me great joy to support her as she launches her own event management venture. Meenakshi is known for her passion, integrity, deep knowledge of production, and exceptional reliability—qualities that are rare and invaluable in this industry. I have no doubt that every event she touches will reflect her signature blend of heart, precision, and style.",
     author: "Vani Raju",
     role: "Ammapalli Temple Wedding"
   },
   {
-    quote: "Minakshi's expertise in cultural consulting brought authenticity and depth to our bridal jewellery collections. Her insights into traditional motifs and contemporary preferences were invaluable to our design process.",
-    author: "GRT Jewellers",
-    role: "Cultural Consultant - Bridal Collections"
-  },
-  {
-    quote: "From the USA, planning our daughter's wedding seemed daunting. Minakshi's guidance, attention to detail, and ability to coordinate with the best vendors made the entire process smooth and joyful.",
-    author: "Raj & Padma Mantena",
-    role: "Wedding Planning - USA to India"
+    quote: `Working with Minakshi has been nothing short of incredible. Her unwavering support in Hyderabad has been a cornerstone in helping us plan and execute numerous weddings with grace and precision. Her deep knowledge of the wedding industry, local vendors, and venues has consistently made our work smoother and more efficient. Minakshi doesn't just offer assistance—she becomes an essential partner in the process. Her attention to detail, reliability, and genuine commitment to each event have meant the world to us. We're truly grateful for everything she brings to the table and look forward to many more successful collaborations.`,
+    author: "Devika Narain",
+    role: "Wedding Planner"
   }
 ];
 
@@ -41,6 +36,6 @@ export const services: Service[] = [
 
 export const navigation: NavItem[] = [
   { label: "About", href: "/about" },
-  { label: "Case Studies", href: "/case-studies" },
+  // { label: "Case Studies", href: "/case-studies" },
   // { label: "Contact", href: "/contact" }
 ]; 

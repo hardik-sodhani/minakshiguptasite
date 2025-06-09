@@ -20,7 +20,7 @@ const config: Config = {
           mint: '#C9D8AC',
           forest: '#3E6E5C',
           darkTeal: '#356C75',
-          beige: '#FDFBF7',
+          beige: '#F8F6EB',
         }
       }
     },
