@@ -35,8 +35,8 @@ export const services: Service[] = [
 ];
 
 export const navigation = [
-  { label: 'About', href: '/about' },
+  { label: 'My Story', href: '/about' },
   { label: 'Services', href: '/#services' },
-  { label: 'Kind Words', href: '/testimonials' },  // previously "Testimonials"
-  { label: 'Contact', href: '/contact' },
+  { label: 'Testimonials', href: '/testimonials' },  // previously "Testimonials"
+  { label: 'Contact Us', href: '/contact' },
 ];
