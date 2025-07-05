@@ -1,27 +1,32 @@
-import Link from 'next/link';
+'use client';
+
+import Image from 'next/image';
+import CalendlyPopup from '../ui/CalendlyPopup';
 
 export default function Hero() {
   return (
-    <section className="relative text-center px-6 py-20 min-h-[60vh] flex flex-col items-center justify-center overflow-hidden">
-      {/* Background image */}
-      <div className="absolute inset-0 w-full h-full z-0">
-        <img
-          src="/images/backgroundhero.jpg"
-          alt="Wedding background"
-          className="w-full h-full object-cover object-center"
-        />
-        {/* Overlay for readability */}
-        <div className="absolute inset-0 bg-brand-forest opacity-70" />
-      </div>
-      {/* Content */}
-      <div className="relative z-10">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-brand-beige">
-          Weddings &amp; Events Curated with Grace
-        </h1>
-        <p className="max-w-xl mx-auto text-lg text-brand-mint">
-          Minakshi Gupta specializes in bespoke wedding and event planning across Hyderabad and India, delivering elegance with every detail.
-        </p>
+    <section className="relative w-full h-[80vh] md:h-screen overflow-hidden">
+      {/* Background Image */}
+      <Image
+        src="/images/minakshi-hero.jpg"
+        alt="Minakshi Gupta"
+        fill
+        priority
+        className="object-cover object-[center_top] md:object-center"
+      />
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/40 flex items-start md:items-center justify-start px-6 md:px-16 pt-16 md:pt-0">
+        <div className="text-white max-w-md">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-tight">
+            Your advocate in<br />every detail
+          </h1>
+          <p className="text-base md:text-lg mb-6">
+            Consultancy that matches you with the right vendors, guides decisions &amp; ensures your celebration begins with clarity
+          </p>
+          <CalendlyPopup />
+        </div>
       </div>
     </section>
   );
-} 
+}

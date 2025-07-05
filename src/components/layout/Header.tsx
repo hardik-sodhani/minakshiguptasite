@@ -4,24 +4,28 @@ import { navigation } from '@/data/content';
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center p-6 shadow-md bg-brand-charcoal sticky top-0 z-10">
-      <div className="flex items-center gap-3">
-        <Link href="/" className="flex items-center gap-3">
-          <Image src="/icons/mglogo.png" alt="MG Logo" width={64} height={64} className="h-64 w-64 object-contain" />
-          <span className="text-xl font-bold tracking-wide text-brand-mint">Minakshi Gupta</span>
-        </Link>
+    <header className="bg-brand-beige text-brand-charcoal py-4 px-6 border-b border-gray-200">
+      <div className="flex justify-center">
+        <Image src="/icons/mglogocropped.png" alt="MG Logo" width={60} height={60} />
       </div>
-      <nav className="space-x-6 text-sm font-medium">
+      <div className="mt-2 flex justify-center items-center space-x-8 text-sm font-medium">
         {navigation.map((item) => (
-          <Link 
-            key={item.href} 
+          <Link
+            key={item.href}
             href={item.href}
-            className="text-brand-beige hover:text-brand-mint transition-colors"
+            className="text-brand-forest hover:text-brand-mint transition-colors"
           >
             {item.label}
           </Link>
         ))}
-      </nav>
+        <Link
+          href="/contact"
+          className="ml-4 px-4 py-2 bg-brand-darkTeal text-white rounded-md hover:bg-brand-mint transition"
+        >
+          Schedule a Call
+        </Link>
+        test
+      </div>
     </header>
   );
-} 
+}

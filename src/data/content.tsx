@@ -34,9 +34,9 @@ export const services: Service[] = [
   }
 ];
 
-export const navigation: NavItem[] = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  // { label: "Case Studies", href: "/case-studies" },
-  { label: "Contact", href: "/contact" }
-]; 
+export const navigation = [
+  { label: 'About', href: '/about' },
+  { label: 'Services', href: '/#services' },
+  { label: 'Kind Words', href: '/testimonials' },  // previously "Testimonials"
+  { label: 'Contact', href: '/contact' },
+];
