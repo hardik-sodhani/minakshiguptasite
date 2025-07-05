@@ -2,14 +2,20 @@ import Image from 'next/image';
 
 export default function AboutPage() {
     return (
-        <main className="bg-brand-beige min-h-screen py-16 px-4">
+        <main className="bg-brand-beige min-h-screen py-16 px-4 pt-24">
             <section className="max-w-5xl mx-auto">
                 <h1 className="text-3xl md:text-4xl font-bold text-brand-forest text-center mb-10">About Minakshi</h1>
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16">
                     {/* Photo section */}
                     <div className="flex-shrink-0 w-64 h-64 rounded-2xl bg-gray-100 shadow-md flex items-center justify-center overflow-hidden">
-                        {/* Replace src with actual photo when available */}
-                        <span className="text-gray-400 text-lg">Professional Photo</span>
+                        <Image
+                            src="/images/aboutMeProfile.JPG"
+                            alt="Minakshi Gupta professional profile photo"
+                            width={256}
+                            height={256}
+                            className="object-cover w-full h-full"
+                            priority
+                        />
                     </div>
                     {/* Bio section */}
                     <div className="flex-1 text-brand-charcoal text-lg">

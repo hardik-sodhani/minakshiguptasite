@@ -10,7 +10,9 @@ export default function StickyNavBar() {
     <nav className="fixed top-0 left-0 w-full z-50 bg-brand-beige shadow-md transition-all duration-500" style={{ minHeight: HERO_MIN_HEIGHT }}>
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
         <div className="flex items-center gap-3">
-          <Image src="/icons/mglogocropped.png" alt="MG Logo" width={40} height={40} className="h-10 w-10 object-contain" />
+          <Link href="/" className="flex items-center gap-3">
+            <Image src="/icons/mglogocropped.png" alt="MG Logo" width={40} height={40} className="h-10 w-10 object-contain" />
+          </Link>
         </div>
         <div className="space-x-6 text-sm font-medium">
           {navigation.map((item) => (

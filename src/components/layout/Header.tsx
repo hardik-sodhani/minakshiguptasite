@@ -6,8 +6,10 @@ export default function Header() {
   return (
     <header className="flex justify-between items-center p-6 shadow-md bg-brand-charcoal sticky top-0 z-10">
       <div className="flex items-center gap-3">
-        <Image src="/icons/mglogo.png" alt="MG Logo" width={64} height={64} className="h-64 w-64 object-contain" />
-        <span className="text-xl font-bold tracking-wide text-brand-mint">Minakshi Gupta</span>
+        <Link href="/" className="flex items-center gap-3">
+          <Image src="/icons/mglogo.png" alt="MG Logo" width={64} height={64} className="h-64 w-64 object-contain" />
+          <span className="text-xl font-bold tracking-wide text-brand-mint">Minakshi Gupta</span>
+        </Link>
       </div>
       <nav className="space-x-6 text-sm font-medium">
         {navigation.map((item) => (
