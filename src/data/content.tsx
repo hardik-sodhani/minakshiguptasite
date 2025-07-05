@@ -38,5 +38,5 @@ export const navigation: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   // { label: "Case Studies", href: "/case-studies" },
-  // { label: "Contact", href: "/contact" }
+  { label: "Contact", href: "/contact" }
 ]; 
