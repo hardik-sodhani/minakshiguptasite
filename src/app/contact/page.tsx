@@ -14,12 +14,12 @@ export default function ContactPage() {
           Interested in working with Minakshi Gupta or have questions about wedding and event consultancy? Use the calendar below to schedule a free discovery call at your convenience. We look forward to connecting with you!
         </p>
         <div className="flex justify-center">
-          <div className="w-full max-w-4xl" style={{ minWidth: 900, height: 700 }}>
+          <div className="w-full max-w-4xl" style={{ minWidth: 320, height: 700 }}>
             <div
                 className="calendly-inline-widget"
                 data-url="https://calendly.com/minakshigupta/discovery-call"
                 data-layout="2_column"
-                style={{ minWidth: 900, height: 700 }}
+                style={{ minWidth: 320, height: 700 }}
             ></div>
           </div>
         </div>
