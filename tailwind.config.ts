@@ -26,7 +26,12 @@ const config: Config = {
           darkTeal: '#356C75',
           beige: '#F8F6EB',
         }
-      }
+      },
+      screens: {
+        sm: '480px',
+        md: '768px',
+        lg: '1024px',
+      },
     },
   },
   plugins: [],
