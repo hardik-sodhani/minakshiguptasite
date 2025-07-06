@@ -16,7 +16,7 @@ export default function Testimonials() {
   }, [current]);
 
   return (
-    <section className="bg-brand-charcoal py-16 px-6 text-center">
+    <section id="testimonials" className="bg-brand-charcoal py-16 px-6 text-center">
       <h2 className="text-2xl font-bold text-brand-mint mb-10">Client Testimonials</h2>
       <div className="relative max-w-3xl mx-auto">
         <div className="bg-brand-beige p-8 rounded-xl shadow-md min-h-[200px] relative flex items-center">

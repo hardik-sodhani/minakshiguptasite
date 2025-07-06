@@ -23,7 +23,7 @@ export default function StickyNavBar() {
 
         {/* Center - Name and Navigation */}
         <div className="flex flex-col items-center text-center">
-          <Link href="/" className="text-lg tracking-wide font-heading uppercase">
+          <Link href="/" className="text-lg tracking-wide font-heading uppercase text-brand-charcoal hover:text-brand-mint transition-colors">
             MINAKSHI GUPTA
           </Link>
           <div className="hidden md:flex space-x-6 text-sm font-medium mt-1">
