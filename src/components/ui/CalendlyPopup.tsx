@@ -17,7 +17,7 @@ export default function CalendlyPopup() {
       url="https://calendly.com/minakshigupta/discovery-call"
       rootElement={rootEl}
       text="Schedule a Free Consultation"
-      className="inline-block bg-brand-beige text-brand-charcoal font-semibold px-6 py-3 rounded-md shadow hover:bg-brand-mint transition mt-64 md:mt-0"
+      className="inline-block bg-brand-beige text-brand-charcoal px-6 py-3 rounded-md shadow hover:bg-brand-mint transition mt-64 md:mt-0"
     />
   );
 }

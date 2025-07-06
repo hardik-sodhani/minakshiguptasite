@@ -17,8 +17,8 @@ export default function Hero() {
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/40 flex items-start md:items-center justify-start px-6 md:px-16 pt-16 md:pt-0">
-        <div className="text-white max-w-md">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-tight">
+        <div className="text-white max-w-lg">
+          <h1 className="text-3xl md:text-5xl font-bold font-heading mb-4 leading-tight">
             Your advocate in<br />every detail
           </h1>
           <p className="text-base md:text-lg mb-6">

@@ -21,6 +21,7 @@ const config: Config = {
         brand: {
           charcoal: '#3F4B51',
           lightTeal: '#ADC3BC',
+          lightBeige: '#FFFDF4',
           mint: '#C9D8AC',
           forest: '#3E6E5C',
           darkTeal: '#356C75',

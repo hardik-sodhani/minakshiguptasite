@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { Testimonial, Service, NavItem } from '../types';
 import { Diamond, Palette, Sparkles } from 'lucide-react';
 import { ServiceIcon } from '../components/ui/ServiceIcon';
@@ -18,20 +19,50 @@ export const testimonials: Testimonial[] = [
 
 export const services: Service[] = [
   {
-    icon: <ServiceIcon Icon={Diamond} />,
-    title: "Wedding Consulting",
-    description: "Comprehensive wedding planning guidance, from vendor selection to cultural integration, ensuring your celebration reflects your unique story and traditions."
+    icon: (
+      <ServiceIcon>
+        <Image
+          src="/icons/puzzleicon.svg"
+          alt="Puzzle Icon"
+          width={96}
+          height={96}
+        />
+      </ServiceIcon>
+    ),
+    title: "Event Consulting",
+    description:
+      "Strategic guidance and oversight to ensure your vision, budget, and vendors align. Bring your vision to life without any chaos.",
   },
   {
-    icon: <ServiceIcon Icon={Palette} />,
-    title: "Cultural Consulting",
-    description: "Expert guidance on incorporating authentic cultural elements, traditions, and rituals into modern celebrations with sensitivity and style."
-  },
-  {
-    icon: <ServiceIcon Icon={Sparkles} />,
+    icon: (
+      <ServiceIcon>
+        <Image
+          src="/icons/creativeicon.svg"
+          alt="Creative Icon"
+          width={96}
+          height={96}
+        />
+      </ServiceIcon>
+    ),
     title: "Creative Team Assembly",
-    description: "Curating the perfect creative team for your vision, bringing together seasoned professionals and emerging talent for exceptional results."
-  }
+    description:
+      "We curate the perfect creative team for your vision, bringing together vetted seasoned professionals and emerging talent for exceptional results.",
+  },
+  {
+    icon: (
+      <ServiceIcon>
+        <Image
+          src="/icons/budgeticon.svg"
+          alt="Budget Icon"
+          width={96}
+          height={96}
+        />
+      </ServiceIcon>
+    ),
+    title: "Budget Fluency",
+    description:
+      "Get clarity on how to allocate your budget efficiently and how to make the most of it. Ensure every rupee works harder for your vision.",
+  },
 ];
 
 export const navigation = [

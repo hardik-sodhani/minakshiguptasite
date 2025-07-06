@@ -1,13 +1,19 @@
 import { LucideIcon } from 'lucide-react';
+import { ReactNode } from 'react';
 
 interface ServiceIconProps {
-  Icon: LucideIcon;
+  Icon?: LucideIcon;
+  children?: ReactNode;
 }
 
-export function ServiceIcon({ Icon }: ServiceIconProps) {
+export function ServiceIcon({ Icon, children }: ServiceIconProps) {
   return (
     <div className="flex justify-center">
-      <Icon className="w-12 h-12 text-brand-darkTeal" />
+      {Icon ? (
+        <Icon className="w-16 h-16 text-brand-darkTeal" />
+      ) : (
+        children
+      )}
     </div>
   );
-} 
+}
