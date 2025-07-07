@@ -4,7 +4,7 @@
 import HeroSplashStickyNav from '@/components/layout/HeroSplashStickyNav';
 import Hero from '@/components/sections/Hero';
 import Services from '@/components/sections/Services';
-import Testimonials from '@/components/sections/Testimonials';
+import TestimonialSlider from '@/components/sections/TestimonialSlider';
 import CTA from '@/components/sections/CTA';
 
 export default function HomePage() {
@@ -13,7 +13,7 @@ export default function HomePage() {
       <HeroSplashStickyNav />
       <Hero />
       <Services />
-      <Testimonials />
+      <TestimonialSlider />
       <CTA />
     </main>
   );

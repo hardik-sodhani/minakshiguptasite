@@ -1,41 +1,60 @@
 import Image from 'next/image';
+import CTA from '@/components/sections/CTA';
 
 export default function AboutPage() {
-    return (
-        <main className="bg-brand-beige min-h-screen py-16 px-4 pt-24">
-            <section className="max-w-5xl mx-auto">
-                <h1 className="text-3xl md:text-4xl font-bold text-brand-forest text-center mb-10">About Minakshi</h1>
-                <div className="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16">
-                    {/* Photo section */}
-                    <div className="flex-shrink-0 w-64 h-64 rounded-2xl bg-gray-100 shadow-md flex items-center justify-center overflow-hidden">
-                        <Image
-                            src="/images/aboutMeProfile.JPG"
-                            alt="Minakshi Gupta professional profile photo"
-                            width={256}
-                            height={256}
-                            className="object-cover w-full h-full"
-                            priority
-                        />
-                    </div>
-                    {/* Bio section */}
-                    <div className="flex-1 text-brand-charcoal text-lg">
-                        <h2 className="text-2xl font-bold text-brand-forest mb-4">Two and a Half Decades of Wedding Excellence</h2>
-                        <p className="mb-4">
-                            Minakshi&apos;s journey in the Indian wedding industry spans over two and a half decades. A Bangalore native, she now calls Hyderabad home. Minakshi co-founded Little Gestures in 2000, growing it from a floral venture into a leading name in event décor and execution. Over the years, she&apos;s collaborated with renowned planners like Devika Narain and Doli Diary, while steadily carving her niche as a behind-the-scenes strategist.
-                        </p>
-                        <p className="mb-4">
-                            Her deep understanding of client sensibilities—balancing aesthetic, cultural nuances, and budget—has naturally led her into consultancy. Since 2020, Minakshi has taken on the role of a wedding and culture consultant, lending her expertise to families and brands such as Vani Raju for the Ammapalli Temple wedding, NCC Family, GRT Jewellers as a cultural consultant for bridal jewellery collections, and Raj and Padma Mantena (USA) for their daughter&apos;s wedding.
-                        </p>
-                        <p>
-                            Minakshi is known for her ability to put together the right creative teams, streamline execution, and deliver deeply personalized experiences. Passionate about bringing together industry stalwarts while creating room for young talent, she remains actively engaged with the ever-evolving landscape of the Indian wedding industry.
-                        </p>
-                    </div>
-                </div>
-                {/* Decorative divider */}
-                <div className="mt-16 flex justify-center">
-                    <div className="w-32 h-1 rounded-full bg-brand-mint opacity-60" />
-                </div>
-            </section>
-        </main>
-    );
-} 
+  return (
+    <main className="bg-brand-beige text-brand-charcoal">
+      {/* Hero Section */}
+      <section className="relative w-full">
+        {/* Hero Image */}
+        <div className="relative w-full">
+            <Image
+                src="/images/aboutMeHero.png"
+                alt="Minakshi Gupta full portrait"
+                width={1920}
+                height={720}
+                className="w-full h-auto object-cover"
+                priority
+            />
+            </div>
+
+        {/* Hero Text */}
+        <div className="absolute top-[25%] md:top-[15%] right-6 md:right-16 z-10 text-left max-w-xl">
+          <h1 className="text-4xl  md:text-5xl font-heading font-medium mb-4 text-white">
+            I&apos;m Minakshi
+          </h1>
+          <p className="text-sm md:text-lg leading-relaxed text-white">
+            After twenty-five years of working with families on their most precious celebrations,
+            I discovered something was missing. There was a gap before the planning begins when
+            families need someone to guide them and bring crystal clear direction to what can feel
+            overwhelming. That missing piece became my calling.
+          </p>
+        </div>
+
+        <div className="absolute top-[70%] md:top-[35%] bg-brand-beige bg-opacity-60 z-10 p-6 md:right-24 md:left-24">
+            <p className="text-sm md:text-lg leading-relaxed mb-6">
+                My journey in the Indian wedding industry has spanned over 25 years. I&apos;m originally from 
+                Bangalore and now live in Hyderabad, where I&apos;ve been fortunate to grow alongside this 
+                evolving industry. I co-founded Little Gestures in 2000, which began as a floral venture and 
+                gradually grew into a trusted name for event décor and execution.
+            </p>
+            <p className="text-sm md:text-lg leading-relaxed mb-6">
+                Over the years, I&apos;ve had the opportunity to collaborate with some wonderful planners, 
+                including Devika Narain and Doli Diary, while quietly building my own path as someone who 
+                works behind the scenes to bring weddings to life. My experience balancing aesthetics, cultural 
+                nuance, working with teams to execute to perfection and allocating budgets has naturally led me toward consultancy.
+            </p>
+            <p className="text-sm md:text-lg leading-relaxed">
+                Since 2020, I&apos;ve been working as a wedding and culture consultant, supporting 
+                families and brands alike—whether it&apos;s been with Vani Raju on the Ammapalli Temple wedding, 
+                the NCC family, GRT Jewellers on their bridal collections, or Raj and Padma Mantena 
+                for their daughter&apos;s engagement. I care deeply about the Indian wedding space—both 
+                honoring its traditions and making space for new voices. I continue to stay closely 
+                involved, hoping to bridge generations and perspectives within this beautiful, ever-changing world.
+            </p>
+        </div>
+      </section>
+      <CTA />
+    </main>
+  );
+}
