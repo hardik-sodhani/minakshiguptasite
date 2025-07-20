@@ -11,7 +11,7 @@ export default function AboutPage() {
           src="/images/aboutMeHero.png"
           alt="Minakshi Gupta full portrait"
           fill
-          className="object-cover object-top top-3"
+          className="object-cover object-top"
           priority
         />
 
